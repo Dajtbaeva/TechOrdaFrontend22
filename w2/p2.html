@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Страница входа</title>
+
+    <style>
+      body {
+        padding: 24px;
+        display: grid;
+        place-content: center;
+      }
+
+      label {
+        display: block;
+        padding-top: 16px;
+      }
+
+      input {
+        width: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="GET">
+      <fieldset>
+        <legend>ВХОД</legend>
+        <label for="email">Почта</label>
+        <input
+          type="email"
+          id="email"
+          required
+          name="email"
+          oninvalid="this.setCustomValidity('Заполните обязательное поле!')"
+        />
+
+        <label for="password">Пароль</label>
+        <input
+          type="password"
+          id="password"
+          required
+          name="password"
+          oninvalid="this.setCustomValidity('Заполните обязательное поле!')"
+        />
+      </fieldset>
+      <button>
+        <a href="p3.html" target="_blank">Войти</a>
+      </button>
+    </form>
+  </body>
+</html>

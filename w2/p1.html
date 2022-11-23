@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Форма регистрации</title>
+
+    <style>
+      body {
+        padding: 24px;
+        display: grid;
+        place-content: center;
+      }
+
+      label {
+        display: block;
+        padding-top: 16px;
+      }
+
+      input {
+        width: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ШКОЛА МУЗЫКИ ДЛЯ ВЗРОСЛЫХ И ДЕТЕЙ</h1>
+    <p>Зарегестрируйтесь и узнайте больше информации о нашей школе!</p>
+    <form method="GET">
+      <fieldset>
+        <legend>Общая информация</legend>
+        <label for="username">Имя</label>
+        <input
+          type="text"
+          id="username"
+          name="name"
+          required
+          placeholder="Ваше имя"
+          oninvalid="this.setCustomValidity('Заполните обязательное поле!')"
+        />
+
+        <label for="surname">Фамилия</label>
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          required
+          placeholder="Ваша фамилия"
+          oninvalid="this.setCustomValidity('Заполните обязательное поле!')"
+        />
+
+        <label for="email">Почта</label>
+        <input
+          type="email"
+          id="email"
+          required
+          name="email"
+          placeholder="Почтовый адрес"
+          oninvalid="this.setCustomValidity('Заполните обязательное поле!')"
+        />
+
+        <label for="password">Пароль</label>
+        <input
+          type="password"
+          id="password"
+          required
+          name="password"
+          placeholder="Придумайте пароль"
+          oninvalid="this.setCustomValidity('Заполните обязательное поле!')"
+        />
+
+        <label for="pnumber">Телефон</label>
+        <input
+          type="text"
+          id="pnumber"
+          required
+          inputmode="tel"
+          placeholder="Номер телефона"
+        />
+        <input
+          list="city-names"
+          id="city-choice"
+          name="city-choice"
+          placeholder="Выберите город"
+        />
+
+        <datalist id="city-names">
+          <option value="Алматы"></option>
+          <option value="Астана"></option>
+          <option value="Павлодар"></option>
+          <option value="Шымкент"></option>
+          <option value="Караганды"></option>
+        </datalist>
+
+        <label for="age">Дата рождения</label>
+        <input type="date" id="age" name="age" value="1970-01-01" />
+
+        <label for="male">Мужчина</label>
+        <input type="radio" id="male" name="gender" />
+
+        <label for="female">Женщина</label>
+        <input type="radio" id="female" name="gender" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Какие курсы Вы хотели бы посещать?</legend>
+        <label for="terms">Курсы обучения по специальности</label>
+        <input type="checkbox" name="terms" id="terms" />
+        <label for="terms">Курсы сольфеджио и ритмики</label>
+        <input type="checkbox" name="terms" id="terms" />
+        <label for="terms">Курсы по дирижированию</label>
+        <input type="checkbox" name="terms" id="terms" />
+        <label for="terms">Курсы по музыкальной композиции</label>
+        <input type="checkbox" name="terms" id="terms" />
+      </fieldset>
+      <button>
+        <a href="p2.html" target="_blank">Зарегистрироваться</a>
+      </button>
+    </form>
+  </body>
+</html>

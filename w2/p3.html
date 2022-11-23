@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Главная</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* position: fixed; */
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#directions">Направления</a>
+          </li>
+          <li>
+            <a href="#moreinfo">Больше о нас</a>
+          </li>
+          <li>
+            <a href="#prices">Цены</a>
+          </li>
+          <li>
+            <a href="#contacts">Наши контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>О школе</h1>
+      <p>
+        Мы 1-я современная школа музыки в Казахстане, основанная в 2013 году.
+        Нам 9 лет! Только у нас вы можете заниматься с лучшими педагогами
+        музыки. Мы являемся первой и единственной школой электронной музыки в
+        Казахстане, где учителя имеют международные дипломы в Канаде и США.
+        Победители национальной премии, лучший образовательный центр Казахстана
+        - 2016-17г.
+      </p>
+      <h2 id="directions">Направления</h2>
+      <ol>
+        <li>Фортепиано</li>
+        <li>Барабаны</li>
+        <li>Домбра</li>
+        <li>Саксофон</li>
+        <li>Вокал</li>
+        <li>Гитара</li>
+        <li>Скрипка</li>
+        <li>Баян</li>
+      </ol>
+      <h2 id="moreinfo">Больше о нас</h2>
+
+      <dl>
+        <dt>Почему выбирают нас?</dt>
+        <dd>-Профессиональные, действующие педагоги - музыканты</dd>
+        <dd>-Индивидуальный подход</dd>
+        <dd>-Более 50 лауреатов Международных конкурсов и фестивале</dd>
+        <dd>-Лучшие из существующих современные методики</dd>
+        <dt>Наши преимущества</dt>
+        <dd>-Обучение с нуля и в любом возрасте</dd>
+        <dd>-Гибкое расписание</dd>
+        <dd>-Удобное расположение школы</dd>
+        <dd>-Отчетные концерты каждые 3 месяца</dd>
+      </dl>
+
+      <h2 id="prices">Наши цены</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Курсы</th>
+            <th>Цены</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Фортепиано, домбра</td>
+            <td>22 000 тг/мес</td>
+          </tr>
+          <tr>
+            <td>Барабаны, гитара</td>
+            <td>24 500 тг/мес</td>
+          </tr>
+          <tr>
+            <td>Скрипка, саксофон</td>
+            <td>26 800 тг/мес</td>
+          </tr>
+          <tr>
+            <td>Баян, вокал</td>
+            <td>28 000 тг/мес</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>2 и больше курса</td>
+            <td>45 000 тг/мес</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <footer>
+      <h2 id="contacts">Наши контакты</h2>
+      <ul>
+        <li>+7 (727) 647 38 99</li>
+        <li>г.Алматы, ул.Исиналиева 26а, 4 офис</li>
+      </ul>
+    </footer>
+  </body>
+</html>
