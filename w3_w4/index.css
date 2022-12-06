@@ -1,0 +1,16 @@
+body {
+  padding: 24px;
+  display: grid;
+  place-content: center;
+  background-size: 100%;
+  background-image: url(https://www.nicepng.com/png/detail/43-432504_png-music-notes-clipart-transparent-background-music-notes.png);
+}
+
+label {
+  display: block;
+  padding-top: 16px;
+}
+
+fieldset {
+  background-color: white;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Страница входа</title>
+    <style>
+      input {
+        width: unset;
+      }
+    </style>
+    <link rel="stylesheet" href="\TechOrdaFrontend\w3_w4\reset.css" />
+    <link rel="stylesheet" href="\TechOrdaFrontend\w3_w4\index.css" />
+  </head>
+  <body>
+    <form method="GET">
+      <fieldset>
+        <legend
+          style="color: rgb(25, 47, 91); text-align: center; font-weight: bold"
+        >
+          ВХОД
+        </legend>
+        <label for="email">Почта</label>
+        <input
+          type="email"
+          id="email"
+          required
+          name="email"
+          oninvalid="this.setCustomValidity('Заполните обязательное поле!')"
+        />
+
+        <label for="password">Пароль</label>
+        <input
+          type="password"
+          id="password"
+          required
+          name="password"
+          oninvalid="this.setCustomValidity('Заполните обязательное поле!')"
+        />
+      </fieldset>
+      <button style="font-weight: bolder">
+        <a href="main.html" target="_blank">Войти</a>
+      </button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+label {
+  display: block;
+  padding-top: 16px;
+}
+
+input {
+  width: unset;
+}
+
+fieldset {
+  background-color: white;
+}

@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  height: 90px;
+  background-color: rgb(154, 153, 142);
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "aside content";
+  gap: 25px;
+  padding-bottom: 2.5rem;
+}
+
+.main .sidebar {
+  grid-area: aside;
+  background-color: rgb(124, 113, 124);
+  width: 250px;
+}
+
+.menu a:hover {
+  color: red;
+  text-decoration: none;
+  position: relative;
+}
+
+.content {
+  place-content: center;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  padding-left: 90px;
+  padding-top: 20px;
+  display: grid;
+  place-content: center;
+  background: url(https://static.zara.net/photos///contents/mkt/spots/aw22-studio-collection-maintenance/subhome-xmedia-worldwide//w/1920/IMAGE-landscape-9a6c6bc2-7385-4321-a2ee-2ece12d0ba8d-default_0.jpg?ts=1664802617794);
+}
+
+#styl-ref img {
+  alt: "img can't load";
+  height: 480px;
+  width: 360px;
+}
+
+.content p::first-letter {
+  font-size: 28px;
+  color: rgb(139, 0, 137);
+}
+
+h1,
+h2 {
+  color: brown;
+  font-size: 30px;
+}
+
+h3 {
+  color: rgb(112, 47, 47);
+  font-size: 20px;
+}
+
+.child-selector > p {
+  background-color: rgb(154, 153, 142);
+}
+.adjacent-selector + p {
+  background-color: rgb(154, 153, 142);
+}
+.general-selector ~ p {
+  background-color: rgb(154, 153, 142);
+}
+
+@media (max-width: 500px) {
+  .nav_mobile {
+    display: flex;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgb(154, 153, 142);
+}
