@@ -8,7 +8,7 @@ const API_URL_COMMENTS = "https://jsonplaceholder.typicode.com/comments";
 
 async function sendHttpRequest(method, url, body) {
   const res = await fetch(url, {
-    method,
+    method, 
     body: JSON.stringify(body),
   });
   return await res.json();
