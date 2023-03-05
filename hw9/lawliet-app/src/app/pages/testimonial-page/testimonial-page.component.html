@@ -1,1 +1,6 @@
-<p>testimonial-page works!</p>
+<div class="container">
+  <div class="title">Clients Testimonial</div>
+  <div class="feedbacks" *ngIf="feedbacks">
+    <app-feedback *ngFor="let fb of feedbacks" [feedback]="fb"></app-feedback>
+  </div>
+</div>

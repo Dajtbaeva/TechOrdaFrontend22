@@ -1,1 +1,7 @@
-<p>feedback works!</p>
+<div class="item" *ngIf="feedback">
+  <div class="fdbk">
+    <div class="title">{{ feedback.title }}</div>
+    <div class="text">{{ feedback.text }}</div>
+  </div>
+  <div class="img"><img [src]="feedback.img" [alt]="feedback.title" /></div>
+</div>
