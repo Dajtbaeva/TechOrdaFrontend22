@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="input">
+    <input
+      class="search"
+      type="text"
+      placeholder="Search movies..."
+      [(ngModel)]="term"
+    />
+  </div>
+  <p *ngIf="loading">Loading...</p>
+  <app-movie-list [term]="term" [movies]="movies"></app-movie-list>
+</div>

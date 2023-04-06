@@ -1,0 +1,10 @@
+<div class="movie_list">
+  <div class="movies" *ngIf="movies">
+    <app-movie-item
+      *ngFor="let movie of movies | searchItems : term"
+      [movie]="movie"
+      (remove)="deleteMovie($event, movie.name)"
+    ></app-movie-item>
+    <p *ngIf="movies.length == 0">There's no items...</p>
+  </div>
+</div>
