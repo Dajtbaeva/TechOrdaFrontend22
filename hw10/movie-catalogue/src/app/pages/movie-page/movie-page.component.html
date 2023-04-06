@@ -1,7 +1,18 @@
-<div class="main">
-  <button (click)="goBack()">Go back</button>
-  <div class="info" *ngIf="movie">
-    <h2>{{ movie.name | titlecase }}</h2>
-    <h4>{{ movie.description }}</h4>
+<div *ngIf="movie" class="main">
+  <div class="movie-container">
+    <img [src]="movie.img" alt="{{ movie.name }} cover" />
+    <div class="movie-details">
+      <h1>{{ movie.name }}</h1>
+      <div class="genres">
+        <span *ngFor="let genre of movie.genres">{{ genre }}</span>
+      </div>
+      <div class="rate">{{ movie.rate }}</div>
+      <div class="length">{{ movie.length }}</div>
+      <p class="description">{{ movie.description }}</p>
+    </div>
   </div>
+</div>
+
+<div *ngIf="!movie" class="main">
+  <p>The movie with the specified ID was not found.</p>
 </div>

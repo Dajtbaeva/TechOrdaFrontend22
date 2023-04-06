@@ -14,12 +14,7 @@ export class MovieItemComponent {
 
   constructor(private router: Router) {}
 
-  viewMovie(movie: IMovie) {
-    this.router.navigate(['/movies', movie.id]);
-  }
-
-  removeMovie() {
-    const movieId = this.movie.id;
-    this.remove.emit(movieId);
+  viewMovie() {
+    this.router.navigate(['/home', this.movie.id]);
   }
 }

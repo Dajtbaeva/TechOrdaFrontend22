@@ -1,21 +1,16 @@
 <div *ngIf="movie" class="movie">
-  <div class="img">
+  <div class="img" (click)="viewMovie()">
     <img [src]="movie.img" [alt]="movie.name" />
   </div>
   <div class="info">
-    <p class="title">{{ movie.name }}</p>
+    <p class="title" (click)="viewMovie()">{{ movie.name }}</p>
     <p class="description">Genres: {{ movie.genres }}</p>
     <p class="details">
       Rate: <span>{{ movie.rate | number : "1.2-4" }}</span> | Length:
       <span>{{ movie.length }}</span>
     </p>
   </div>
-  <div class="buttons">
-    <div (click)="viewMovie(movie)">
-      <button>View</button>
-    </div>
-    <div (click)="removeMovie()">
-      <button>Remove</button>
-    </div>
+  <div class="buttons" (click)="viewMovie()">
+    <button>View</button>
   </div>
 </div>

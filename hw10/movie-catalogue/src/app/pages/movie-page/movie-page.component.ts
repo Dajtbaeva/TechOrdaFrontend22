@@ -15,7 +15,7 @@ export class MoviePageComponent {
 
   ngOnInit() {
     this.movieId = this.route.snapshot.params['id'];
-    const neededMovie = myMovies.find((movie) => movie.id === this.movieId);
+    const neededMovie = myMovies.find((movie) => movie.id == this.movieId);
     if (neededMovie) {
       this.movie = neededMovie;
     }
