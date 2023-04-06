@@ -11,6 +11,8 @@ import { myMovies } from 'src/app/movie.mock-data';
 export class MoviePageComponent {
   movie!: IMovie;
   movieId!: number;
+  term = '';
+  genresMovies: IMovie[] = [];
   constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
@@ -19,6 +21,9 @@ export class MoviePageComponent {
     if (neededMovie) {
       this.movie = neededMovie;
     }
+    this.genresMovies = myMovies.filter((movie) =>
+      movie.genres.some((genre) => this.movie.genres.includes(genre))
+    );
   }
 
   goBack() {

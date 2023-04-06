@@ -11,6 +11,8 @@
       <p class="description">{{ movie.description }}</p>
     </div>
   </div>
+  <h2>Movies with the same genres</h2>
+  <app-movie-list [term]="term" [movies]="genresMovies"></app-movie-list>
 </div>
 
 <div *ngIf="!movie" class="main">

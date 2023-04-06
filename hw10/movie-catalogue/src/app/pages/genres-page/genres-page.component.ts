@@ -13,12 +13,7 @@ export class GenresPageComponent implements OnInit {
   genres!: GenreType[];
   selectedGenre!: GenreType;
   movies: IMovie[] = [];
-
-  // ngOnInit() {
-  //   this.genres = flatMap(new Set(myMovies.map((movie) => movie.genres)));
-  //   this.movies = myMovies;
-  // }
-
+  
   ngOnInit() {
     const uniqueGenres = [
       ...new Set(myMovies.flatMap((movie) => movie.genres)),
