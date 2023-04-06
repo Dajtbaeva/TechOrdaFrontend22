@@ -11,6 +11,7 @@ import { GenresPageComponent } from './pages/genres-page/genres-page.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { MovieItemComponent } from './components/movie-item/movie-item.component';
 import { MoviePageComponent } from './pages/movie-page/movie-page.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MoviePageComponent } from './pages/movie-page/movie-page.component';
     MovieListComponent,
     MovieItemComponent,
     MoviePageComponent,
+    NotFoundPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

@@ -1,1 +1,7 @@
-<p>movie-page works!</p>
+<div class="main">
+  <button (click)="goBack()">Go back</button>
+  <div class="info" *ngIf="movie">
+    <h2>{{ movie.name | titlecase }}</h2>
+    <h4>{{ movie.description }}</h4>
+  </div>
+</div>

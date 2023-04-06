@@ -1,1 +1,22 @@
-<p>genres-page works!</p>
+<div class="main">
+  <h4>Choose a genre of movie</h4>
+  <div class="options">
+    <ul>
+      <li *ngFor="let genre of genres">
+        <label>
+          <input
+            type="radio"
+            name="genre"
+            [value]="genre"
+            (change)="onSelect($event)"
+          />
+          {{ genre }}
+        </label>
+      </li>
+    </ul>
+    <app-movie-list
+      [term]="term"
+      [movies]="filteredMovies"
+    ></app-movie-list>
+  </div>
+</div>

@@ -11,7 +11,10 @@
     </p>
   </div>
   <div class="buttons">
-    <div class="removeMovie" (click)="removeMovie()">
+    <div (click)="viewMovie(movie)">
+      <button>View</button>
+    </div>
+    <div (click)="removeMovie()">
       <button>Remove</button>
     </div>
   </div>
